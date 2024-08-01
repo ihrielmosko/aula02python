@@ -50,9 +50,4 @@ vendedores.remove("null")
 for i in Vendas:
     vendedores.add(i[3])
 
-print("vendedores: ",vendedores)
-
-
-
-
-
+print("vendedores: ", vendedores)
