@@ -105,3 +105,35 @@ while x < y:
 print("por ordem decrescente de vendas: ", vendedor_vendas_ordenado)
 
 # - - - - -
+
+print("menores valores de produto: ", valores[:2])
+
+# - - - - -
+
+print("inserção de entrada")
+
+data_input = input("data da venda: ")
+produto_input = input("produto: ")
+valor_input = input("valor do produto: ")
+vendedor_input = input("nome do vendedor: ")
+
+validação = len(Vendas)
+
+nova_entrada = [data_input, produto_input, valor_input, vendedor_input]
+Vendas.append(nova_entrada)
+
+if len(Vendas) > validação:
+    print("entrada adicionada")
+else:
+    print("ocorreu um erro ao adicionar a entrada")
+
+# - - - - -
+
+print("...")
+print("deseja remover a ultima entrada?")
+remove = int(input("digite 1 para remover"))
+if remove == 1:
+    Vendas.pop()
+    print("lista removida")
+else:
+    print("remoção cancelada")
